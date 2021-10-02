@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:DPS_926___App_1.Views"  
+             xmlns:model="clr-namespace:DPS_926___App_1.Models"
+             x:Class="DPS_926___App_1.Views.RestockPage"
+             x:DataType="local:RestockPage">
+
+    <Grid Padding="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid>
+                <Entry x:Name="entryQuantity" Grid.Column="0" Grid.ColumnSpan="2" FontSize="Medium" Placeholder="Add Quantity" Keyboard="Numeric"/>
+                <Button Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked" Text="Restock" HorizontalOptions="End"/>
+                <Button Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked" Text="Cancel" HorizontalOptions="Start"/>
+            </Grid>
+        </StackLayout>
+        <ListView Grid.Row="1"
+            x:Name="listProducts"
+            ItemSelected="ProductSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="30,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0"
+                                x:DataType="model:Product"
+                                Text="{Binding Name}"
+                                HorizontalOptions="Start"/>
+                            <Label Grid.Column="1"
+                                x:DataType="model:Product"
+                                Text="{Binding Quantity}"
+                                HorizontalOptions="End"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+    
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:DPS_926___App_1.Views"
+             x:DataType="viewmodels:HistoryDetailPage"
+             x:Class="DPS_926___App_1.Views.HistoryDetailPage"
+             Title="{Binding Name}">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Date:" HorizontalOptions="End"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Date, StringFormat='{0:MMMM dd, yyyy} - {0:hh:mm}'}"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Product:" HorizontalOptions="End"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Name}"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="Amount:" HorizontalOptions="End"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Quantity}"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="Total:" HorizontalOptions="End"/>
+            <Label Grid.Row="4" Grid.Column="1" Text="{Binding Total, StringFormat='{0:C}'}"/>
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:DPS_926___App_1.Views"  
+             xmlns:model="clr-namespace:DPS_926___App_1.Models"
+             x:Class="DPS_926___App_1.Views.HistoryPage"
+             x:DataType="local:HistoryPage">
+
+
+    <StackLayout Grid.Row="1">
+        <ListView
+            x:Name="listPurchases"
+            ItemTapped="PurchaseTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="30,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0"
+                                x:DataType="model:Purchase"
+                                Text="{Binding Name}"
+                                HorizontalOptions="Start"/>
+                            <Label Grid.Column="1"
+                                x:DataType="model:Purchase"
+                                Text="{Binding Quantity}"
+                                HorizontalOptions="End"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,20 @@
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\bin\Debug\netstandard2.0\DPS 926 - App 1.deps.json
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\bin\Debug\netstandard2.0\DPS 926 - App 1.dll
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\bin\Debug\netstandard2.0\ref\DPS 926 - App 1.dll
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\bin\Debug\netstandard2.0\DPS 926 - App 1.pdb
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.AssemblyInfoInputs.cache
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.AssemblyInfo.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.csproj.CoreCompileInputs.cache
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.dll
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\ref\DPS 926 - App 1.dll
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.pdb
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\ManagerPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\HistoryPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\HistoryDetailPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\NewProductPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\Views\RestockPage.xaml.g.cs
+C:\Users\Crazy\source\repos\DPS 926 - App 1\DPS 926 - App 1\DPS 926 - App 1\obj\Debug\netstandard2.0\DPS 926 - App 1.csproj.AssemblyReference.cache

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:DPS_926___App_1.Views"
+             x:Class="DPS_926___App_1.Views.NewProductPage"
+             x:DataType="local:NewProductPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Button_Clicked"/>
+        <ToolbarItem Text="Cancel" Clicked="Button_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="3" Padding="15">
+            <Label Text="Name" FontSize="Medium" />
+            <Entry x:Name="entryName" FontSize="Medium" />
+            <Label Text="Quantity" FontSize="Medium" />
+            <Entry x:Name="entryQuantity" Keyboard="Numeric" FontSize="Medium" Margin="0" />
+            <Label Text="Price" FontSize="Medium" />
+            <Entry x:Name="entryPrice" Keyboard="Numeric" Unfocused="Entry_Unfocused" FontSize="Medium" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

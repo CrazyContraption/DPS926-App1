@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DPS 926 - App 1": {
+      "commandName": "Project",
+      "commandLineArgs": "-autolaunch"
+    }
+  }
+}

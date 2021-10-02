@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodels="clr-namespace:DPS_926___App_1.Views"
+             x:DataType="viewmodels:ManagerPage"
+             mc:Ignorable="d"
+             x:Class="DPS_926___App_1.Views.ManagerPage"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Button VerticalOptions="Center" Clicked="Button_Clicked" Text="History" Padding="30,0"/>
+            <Button VerticalOptions="Center" Clicked="Button_Clicked" Text="Restock" Padding="30,0"/>
+            <Button VerticalOptions="Center" Clicked="Button_Clicked" Text="Add New Product" Padding="30,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

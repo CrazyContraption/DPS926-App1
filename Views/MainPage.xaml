@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:DPS_926___App_1.Views"  
+             xmlns:model="clr-namespace:DPS_926___App_1.Models"
+             x:Class="DPS_926___App_1.Views.MainPage"
+             x:DataType="local:MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.7*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="40, 1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Primary}" Padding="5">
+                <Label Text="Type"/>
+                <Label x:Name="labelType"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Primary}" Padding="5">
+                <Label Text="Quantity"/>
+                <Label x:Name="labelQuantity"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3" Grid.Row="1" BackgroundColor="{StaticResource Primary}" Padding="5">
+                <Label Text="Total"/>
+                <Label x:Name="labelTotal"/>
+            </StackLayout>
+
+            <Button Grid.Column="3" Grid.Row="2" Grid.RowSpan="2" BackgroundColor="DodgerBlue" Text="Buy" Clicked="Button_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="4" Text="DEL" Clicked="Button_Clicked"/>
+
+            <Button Grid.Column="0" Grid.Row="1" Text="1" Clicked="Button_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="1" Text="2" Clicked="Button_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="1" Text="3" Clicked="Button_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="2" Text="4" Clicked="Button_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="5" Clicked="Button_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="2" Text="6" Clicked="Button_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="3" Text="7" Clicked="Button_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="3" Text="8" Clicked="Button_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="3" Text="9" Clicked="Button_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="4" Text="0" Clicked="Button_Clicked"/>
+
+            <Button Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="Red" Text="Manager" Clicked="Button_Clicked"/>
+        </Grid>
+
+        <StackLayout Grid.Row="1">
+            <ListView
+                  x:Name="listProducts"
+                  ItemSelected="ProductSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="30,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0"
+                                       x:DataType="model:Product"
+                                       Text="{Binding Name}"
+                                       HorizontalOptions="Start"/>
+                                <Label Grid.Column="1"
+                                       x:DataType="model:Product"
+                                       Text="{Binding Quantity}"
+                                       HorizontalOptions="End"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
